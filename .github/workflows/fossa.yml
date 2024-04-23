@@ -1,4 +1,4 @@
-name: FOSSA CLI Analysis + Test
+name: FOSSA CLI Analysis
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   # test
@@ -36,4 +36,4 @@ jobs:
           
           curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install-latest.sh | bash
           fossa --version
-          fossa analyze --exclude field-assist-model-sdk
+          fossa analyze --exclude-path field-assist-model-sdk
